@@ -24,6 +24,9 @@ PRODUCT_COPY_FILES += \
 # Inherit proprietary parts
 $(call inherit-product-if-exists, vendor/xiaomi/cereus/cereus-vendor.mk)
 
+# Properties
+-include device/xiaomi/cereus/prop.mk
+
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
